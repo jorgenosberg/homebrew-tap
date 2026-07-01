@@ -20,7 +20,8 @@ brew install jorgenosberg/tap/<formula>
 
 | Formula | Description |
 | ------- | ----------- |
-| [agentcfg](https://github.com/jorgenosberg/agentcfg) | Sync skills, hooks, and instruction files across local AI coding agent configurations. Includes `agentcfg` (CLI) and `lazyagentcfg` (TUI). |
+| [agentcfg](https://github.com/jorgenosberg/agentcfg) | Scriptable CLI to sync skills, hooks, and instruction files across local AI coding agent configurations. |
+| [lazyagentcfg](https://github.com/jorgenosberg/agentcfg) | Interactive TUI for managing AI coding agent configurations (lazygit-style). |
 
 ## How this tap is updated
 
