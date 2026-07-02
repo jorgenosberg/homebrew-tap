@@ -5,21 +5,21 @@
 class Agentcfg < Formula
   desc "Scriptable CLI to sync skills, hooks, and instruction files across local AI coding agent configurations."
   homepage "https://github.com/jorgenosberg/agentcfg"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.0/agentcfg_darwin_amd64.tar.gz"
-      sha256 "81a2b7655c64c6f9b9e3dc1220a4ad41a62b84b031e3a1b237dec344ca8cb54c"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/agentcfg_darwin_amd64.tar.gz"
+      sha256 "569142b60651868b109a4b38b337962464b05f944e1c660c9b2c0f70ca89200a"
 
       define_method(:install) do
         bin.install "agentcfg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.0/agentcfg_darwin_arm64.tar.gz"
-      sha256 "aae4bbc876ace7d4e89a42232bcf0afa93358ff28a5dd2c6122949920947c831"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/agentcfg_darwin_arm64.tar.gz"
+      sha256 "721ddba96c7e64f7fe7a1244a724d37a54500f89b3ab410b6d0e8019a7f8676a"
 
       define_method(:install) do
         bin.install "agentcfg"
@@ -29,15 +29,15 @@ class Agentcfg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.0/agentcfg_linux_amd64.tar.gz"
-      sha256 "fea523da119d82a92ba86d75e67b87d2002ba814522ac46b9f2a3976b955b846"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/agentcfg_linux_amd64.tar.gz"
+      sha256 "6e5418ee4ecf15fcf0891f8820155444a993b36bd40d28e9821ff45d445baf57"
       define_method(:install) do
         bin.install "agentcfg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.0/agentcfg_linux_arm64.tar.gz"
-      sha256 "1ef693762c0c965e5d76bec992ea17955a24b2b055b858c72bc553e8a291a8a5"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/agentcfg_linux_arm64.tar.gz"
+      sha256 "17084de707dd7052d1f29e812b711977a2fe67f8117fbfcf28200d6a32a4379c"
       define_method(:install) do
         bin.install "agentcfg"
       end
