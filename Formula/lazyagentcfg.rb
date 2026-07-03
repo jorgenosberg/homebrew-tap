@@ -5,21 +5,21 @@
 class Lazyagentcfg < Formula
   desc "Interactive TUI for managing AI coding agent configurations (lazygit-style)."
   homepage "https://github.com/jorgenosberg/agentcfg"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/lazyagentcfg_darwin_amd64.tar.gz"
-      sha256 "97f722493cc042d9718dd70a32d830ca72b9f819fde8fdf7e5e45b71f2419629"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.2.0/lazyagentcfg_darwin_amd64.tar.gz"
+      sha256 "454babc66a7462c383a8648b7b4618d3daa7c69642d0caba887eb684991af701"
 
       define_method(:install) do
         bin.install "lazyagentcfg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/lazyagentcfg_darwin_arm64.tar.gz"
-      sha256 "ad5bd3bd64c6493d280ecbea06158d98391d2940e5cad7ac217d9a49a090339f"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.2.0/lazyagentcfg_darwin_arm64.tar.gz"
+      sha256 "6e769dfc6d00f28c8fb29394b113c5fa9745198d123e3c2feede033373ea4256"
 
       define_method(:install) do
         bin.install "lazyagentcfg"
@@ -29,15 +29,15 @@ class Lazyagentcfg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/lazyagentcfg_linux_amd64.tar.gz"
-      sha256 "f072f603087f6398e22fbe47e4172834ac5818e7fddecc5ef6cf4c2480513ad6"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.2.0/lazyagentcfg_linux_amd64.tar.gz"
+      sha256 "40ec520b2e8efc9a924078c8f8b9bbe4bdb9555f422fbe1b553543dabbfc1cef"
       define_method(:install) do
         bin.install "lazyagentcfg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.1.1/lazyagentcfg_linux_arm64.tar.gz"
-      sha256 "9cbbdcc6f7e565943b04ae601788c6bb8b870a795ee8e45e2fd4c1f4ebcf248b"
+      url "https://github.com/jorgenosberg/agentcfg/releases/download/v0.2.0/lazyagentcfg_linux_arm64.tar.gz"
+      sha256 "478c772e9a73c9562de6193a6c228778b7bc047401703310b0d724f6029a58ac"
       define_method(:install) do
         bin.install "lazyagentcfg"
       end
